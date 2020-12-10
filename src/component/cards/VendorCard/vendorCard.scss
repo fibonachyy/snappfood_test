@@ -1,0 +1,99 @@
+@import "../../../assets/sass/colors";
+
+.vendorCard {
+  float: 1;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  background-color: $base-light;
+  width: 100%;
+  margin: 2px 0;
+
+  .vendorCard_header {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+}
+
+.vewndorcard_imgContainer {
+  height: 96px;
+  width: 96px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0 16px;
+  border: solid 1px $sec-text;
+  img {
+    object-fit: cover;
+  }
+}
+.vendorCard_header_details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: calc(100vw - 96 - (16 * 3));
+  padding: 10px 0;
+  margin-right: 16px;
+  .vendorCard_header_details_title {
+    font-size: 17px;
+    font-weight: 600;
+    color: $main-text;
+  }
+  .vendorCard_header_details_location {
+    font-size: 12px;
+    font-weight: 300;
+    color: $light-gray;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.vendorCard_footer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px $sec-text;
+
+  .vendorCard_footer_price {
+    display: flex;
+
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding: 0 15px;
+    direction: rtl;
+    .vendorCard_footer_price_text {
+      padding: 0 15px;
+      color: $main-text;
+    }
+  }
+  .vendorCard_footer_badge {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px 15px;
+    .badge--g {
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 6px;
+      padding-top: 3px;
+      min-width: 32px;
+      margin: 0 10px;
+      background-color: $green-main;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+@import "../../../assets/sass/colors";
+
+.filterModal {
+  height: max-content;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $base-light;
+  color: $main-text;
+  align-self: flex-end;
+  justify-self: flex-end;
+  bottom: 0;
+  flex: 1;
+  padding: 0 24px;
+  z-index: 99999999;
+  .filterModal_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  .filterModal_scrollArea {
+    display: flex;
+    flex-direction: column;
+    section {
+      text-align: right;
+      max-height: 50vh;
+      font-size: 14px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      h4 {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 12px;
+        color: $main-text;
+      }
+    }
+  }
+  .filterModal_buttonArea {
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    button {
+      padding: 0 32px;
+      border: none;
+      width: 50%;
+      border-radius: 8px;
+      padding: 20px 20px;
+      margin: 0 17px;
+      font: 17px;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+    .filterModal_buttonArea_lightbtn {
+      background-color: $main-red !important;
+      color: $base-light;
+    }
+    .filterModal_buttonArea_redbtn {
+      background-color: white;
+      color: $main-text;
+      border: 1px solid $main-text;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@import "../../../assets/sass/colors";
+
+.footer {
+  overflow: hidden;
+
+  width: 100%;
+  height: auto;
+  align-self: flex-end;
+  display: flex;
+  position: fixed;
+  border-top: solid 1px $sec-text;
+  height: 68px;
+  bottom: 0;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  background-color: $base-light;
+  .footer_allFilterBTN {
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $main-text;
+    svg {
+      padding: 5px 0;
+      transform: rotate(180deg);
+    }
+  }
+  .footer_filterList {
+    list-style: none;
+    overflow-y: hidden;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    overflow: scroll;
+    flex-direction: row-reverse;
+    flex: 1;
+    .footer_filterList_items {
+      padding: 6px 10px;
+      white-space: pre;
+      color: $main-text;
+      border-radius: 18px;
+      margin: 4px 8px;
+      border: solid 0.2px $sec-text;
+    }
+    .footer_filterList_items--active {
+      border: solid 0.2px $green-light;
+      background-color: $bg-green;
+      color: $green-light;
+    }
+    &::-webkit-scrollbar {
+      width: 0px; /* Remove scrollbar space */
+      background: transparent; /* Optional: just make scrollbar invisible */
+    }
+    /* Optional: show position indicator in red */
+    &::-webkit-scrollbar-thumb {
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../assets/sass/colors";
+
+.filterSelectCard {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: var(--text-medium);
+  font-weight: var(--font-regular);
+  color: var(--text-color);
+  padding: 14.5px 16px 14.5px 12px;
+  border: 1.5px solid $sec-text;
+  border-radius: 6px;
+  margin: 0 0 8px;
+}
+.filterSelectCard--active {
+  border-color: $green-light;
+}

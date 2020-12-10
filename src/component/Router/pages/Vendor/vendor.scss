@@ -1,0 +1,21 @@
+.vendorcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 65px;
+  .vendorcontainer_title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    h2 {
+      text-align: right;
+      padding: 20px;
+      color: #505050;
+      width: 100%;
+    }
+  }
+}
